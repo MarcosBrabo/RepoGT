@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Básica</title>
+</head>
+<!--5.Estructura Básica de una Página
+Objetivo: Familiarizar a los estudiantes con la estructura básica de una página HTML.
+
+Ejercicio: Crea una página web que incluya los elementos básicos (<!DOCTYPE>, <html>, <head>, <body>), y dentro del <body>, añade un encabezado, un párrafo y un pie de página.
+
+Actividad 6: Crear un Formulario de Registro para un Evento Deportivo
+Objetivo: Diseñar un formulario HTML para inscripciones en un torneo de fútbol.
+
+Instrucciones:
+
+Información Básica: El formulario debe solicitar el nombre completo, la edad y el email del participante.
+Selección de Categoría: Incluir una lista desplegable para que el participante elija la categoría en la que desea participar (e.g., Sub-12, Sub-15, Sub-18).
+Posición en el Campo: Añadir un grupo de botones de opción para seleccionar la posición en la que juega (e.g., Delantero, Mediocampista, Defensa, Portero).
+Términos y Condiciones: Incluir una casilla de verificación para aceptar los términos y condiciones del torneo.
+Botón de Envío: Agregar un botón para enviar el formulario
+
+-->
+<style>
+    #fubol{
+        text-shadow: black;
+        background-color: lightcoral;
+    }
+    #tenis{
+        font-family: verdana;
+        background-color: chocolate;
+    }
+</style>
+<body>
+    <div id="fubol">
+    <header>
+        <h1>Formularios Torneo de Deportes </h1>
+    </header>
+    
+        <p>A continuacion se le presentara un formularia sobre el evento desportivo de futbol, debe completarlo para poder participar</p>
+
+        
+<form>
+  
+  <label for="nombre">Nombre Completo:</label>
+  <input type="text"  name="nombre" required><br><br>
+  <label for="edad">Edad:</label>
+  <input type="number"  name="edad" required><br><br>
+  <label for="email">Email:</label>
+  <input type="email"  name="email" required><br><br>
+
+ 
+  <label for="categoria">Categoría:</label>
+  <select id="categoria" name="categoria" required>
+    <option value="">Seleccione una opción</option>
+    <option value="Sub-12">Sub-12</option>
+    <option value="Sub-15">Sub-15</option>
+    <option value="Sub-18">Sub-18</option>
+  </select><br><br>
+
+  <label>Posición del jugador:</label><br>
+  <input type="radio"  name="posicion" value="Delantero">
+  <br>
+  <input type="radio"  name="posicion" value="Mediocampista">
+  <br>
+  <input type="radio"  name="posicion" value="Defensa">
+  <br>
+  <input type="radio" name="posicion" value="arquero">
+  <br><br>
+
+
+  <input type="checkbox" name="terminos" required>Acepto los términos y condiciones del torneo
+  <br><br>
+
+  <input type="submit" value="Enviar">
+</form></div>
+<br><br>
+
+<!--Actividad 2: Crear una Tabla de Resultados de un Torneo Deportivo
+Objetivo: Desarrollar una tabla HTML que muestre los resultados de un torneo de tenis.
+
+Instrucciones:
+
+Columnas de la Tabla: La tabla debe incluir columnas para el nombre del jugador, país, número de partidos ganados, partidos perdidos y puntos totales.
+Datos de Ejemplo: Insertar al menos 5 filas con datos ficticios de diferentes jugadores.
+ -->
+ <div id="tenis">
+ <hr>
+ <h2> Resultados Torneo de Tenis</h2>
+<table border="1">
+    <tr>
+      <th>Nombre del Jugador</th>
+      <th>País</th>
+      <th>Partidos Ganados</th>
+      <th>Partidos Perdidos</th>
+      <th>Puntos Totales</th>
+    </tr>
+  
+  <tbody>
+    <tr>
+      <td>Pepito Pelota</td>
+      <td>Argentina</td>
+      <td>50</td>
+      <td>10</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>Cristiano Romualdo</td>
+      <td>Portugal</td>
+      <td>45</td>
+      <td>12</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <td>Marquiños Pelotiñas</td>
+      <td>Brasil</td>
+      <td>40</td>
+      <td>15</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>kylian Mboca</td>
+      <td>Argentina</td>
+      <td>35</td>
+      <td>18</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>Roberto Lewandowski</td>
+      <td>Polonia</td>
+      <td>30</td>
+      <td>20</td>
+      <td>90</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    
+    <footer >
+        <p>&copy;Torneo Deportivo 2024</p>
+    </footer>
+</div>
+</body>
+</html>
